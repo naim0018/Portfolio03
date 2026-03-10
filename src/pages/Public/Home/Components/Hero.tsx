@@ -96,11 +96,11 @@ export default function Hero() {
 
         {/* Image/Profile */}
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end relative">
-          <div className="relative w-80 h-80 md:w-[500px] md:h-[500px]">
+          <div className="relative w-80 h-80 md:w-[500px] md:h-[500px] rounded-full">
             <div className="absolute inset-0 bg-gradient-to-tr from-accent to-purple-600 rounded-full blur-[80px] opacity-20 animate-pulse"></div>
             <img
               alt={name}
-              className="relative w-full h-full object-cover rounded-3xl border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 ease-in-out rotate-3 hover:rotate-0"
+              className="relative w-full h-full object-cover rounded-full border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 ease-in-out rotate-3 hover:rotate-0"
               src={
                 portfolio?.profilePicture ||
                 "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
