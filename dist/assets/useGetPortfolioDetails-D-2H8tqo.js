@@ -1,0 +1,1 @@
+import{u as i,a as r}from"./index-fwOe0mMU.js";const u=()=>{var t;const o=((t=i().state)==null?void 0:t.id)||"69a5f01da19ce46ce6d19e9b",{data:e,isLoading:a,error:s}=r(o,{skip:!o});return{data:e,isLoading:a,error:s}};export{u};
