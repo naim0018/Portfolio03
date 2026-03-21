@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { portfolioApi } from './Api/portfolio.api';
+import { portfolioApi } from './Api/PortfolioApi';
 
 export const store = configureStore({
   reducer: {

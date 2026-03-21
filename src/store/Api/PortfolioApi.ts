@@ -1,16 +1,13 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { GetPortfolioResponse } from "./portfolio.apiTypes";
-
-const baseUrl = import.meta.env.VITE_API_URL || "http://localhost:5000/api/v1";
 
 export const portfolioApi = createApi({
   reducerPath: "portfolioApi",
   baseQuery: fetchBaseQuery({
-    baseUrl,
+    baseUrl: process.env.VITE_API_BASE_URL || "http://localhost:5000/api/v1",
   }),
   tagTypes: ["Portfolio"],
   endpoints: (builder) => ({
-    getSinglePortfolio: builder.query<GetPortfolioResponse, string>({
+    getSinglePortfolio: builder.query({
       query: (id: string) => ({
         url: `/portfolio/${id}`,
         method: "GET",
